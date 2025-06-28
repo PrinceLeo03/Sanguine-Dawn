@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="Sanguine Dawn"
+run/main_scene="uid://c2qjdlp1s04gr"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
