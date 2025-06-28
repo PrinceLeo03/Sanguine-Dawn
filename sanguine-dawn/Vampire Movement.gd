@@ -3,23 +3,30 @@ extends CharacterBody2D
 @export var walk_speed = 200.0
 @export var run_speed = 300.0
 @export var jump_force = -600.0
-@export var jump_count = 0
-@export var max_jumps = 2
 @export var fall_multipiler := 0.2
 
 @export_range(0, 1) var acceleration = 0.2
 @export_range(0, 1) var deceleration = 0.2
 @export_range(0, 1) var deceleration_on_jump_release = 0.4
 
-@onready var coyote_timer = $"Coyote Timer"
 @export var coyote_time_duration := 0.15
 var coyote_time_left := 0.0
 
 @export var jump_buffer_time := 0.15
 var jump_buffer_left := 0.0
 
+@export var dash_speed = 1000.0
+@export var dash_max_distance = 300.0
+@export var dash_curve : Curve
+@export var dash_cooldown = 1.0
+
 # Gets gravity from 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+var is_dashing = false
+var dash_start_position = 0
+var dash_direction = 0
+var dash_timer = 0.0
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -32,10 +39,6 @@ func _physics_process(delta):
 	else:
 		coyote_time_left -= delta
 
-	# Resets jump count, allows for double jump.
-	if is_on_floor():
-		jump_count = 0
-
 	# Register jump input for buffer
 	if Input.is_action_just_pressed("jump"):
 		jump_buffer_left = jump_buffer_time
@@ -43,12 +46,12 @@ func _physics_process(delta):
 	else:
 		jump_buffer_left -= delta
 
-# Jump Logic
-	if jump_buffer_left > 0 and (is_on_floor() or coyote_time_left > 0 or jump_count < max_jumps):
-		velocity.y = jump_force
-		jump_count += 1
-		print("jump")
-		jump_buffer_left = 0.0  #Clears Buffer
+# Coyote Time or Wall Jump
+	if jump_buffer_left > 0 and (is_on_floor() or coyote_time_left > 0 or is_on_wall()):
+			#regular jump
+			velocity.y = jump_force
+			print("Ground jump")
+			jump_buffer_left = 0.0  #Clears Buffer
 
 # Varible Jump Height
 	if Input.is_action_just_released("jump") and velocity.y < 0:
@@ -74,5 +77,26 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, walk_speed * deceleration)
 	$Sprite2D.flip_h = velocity.x < 0
+
+	#Dash Activation
+	if Input.is_action_just_pressed("dash") and direction and not is_dashing and dash_timer <= 0.0:
+		is_dashing = true
+		dash_start_position = position.x
+		dash_direction = direction
+		dash_timer = dash_cooldown
+		print("Dash")
+
+	# Performs dash
+	if is_dashing:
+		var current_distance = abs(position.x - dash_start_position)
+		if current_distance >= dash_max_distance:
+			is_dashing = false
+		else:
+			velocity.x = dash_direction * dash_speed * dash_curve.sample(current_distance / dash_max_distance)
+			velocity.y = 0
+
+	#reduces dash timer
+	if dash_timer > 0.0:
+		dash_timer -= delta
 
 	move_and_slide()

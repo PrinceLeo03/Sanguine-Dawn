@@ -1,11 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1751110936
-Base Player Movement Script.gd::GDScript::90507621260067939::1751123192::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Base Player Movement Script.gd::GDScript::90507621260067939::1751129150::0::1::::<>CharacterBody2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6437911658972058998::1751110936::1751110994::1::::<><><>0<>0<>1399c6f9a7833a2b6ade170321149d91<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 node_2d.tscn::PackedScene/PackedScene::6701522602129955001::1751113148::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://cpuxtfvw8a68i::::res://character_body_2d.gd
 Dash Template.gd::GDScript::5853057655376280859::1751123066::0::1::::<>Node<><>0<>0<><>::
+Vampire Movement.gd::GDScript::652800600574687324::1751129228::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Test Player Script.gd::GDScript::3775582062299123738::1751117670::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Testing Scene.tscn::PackedScene::607254395767881299::1751123192::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://Base Player Movement Script.gd
+Testing Scene.tscn::PackedScene::607254395767881299::1751129238::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://Base Player Movement Script.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
 ::res://Art/::1751123232
 ::res://Art/Hero Knight by LuizMelo/::1751123260
 ::res://Art/Hero Knight by LuizMelo/Hero Knight/::1751123260
