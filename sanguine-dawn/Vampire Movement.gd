@@ -76,7 +76,11 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, direction * speed, speed * acceleration)
 	else:
 		velocity.x = move_toward(velocity.x, 0, walk_speed * deceleration)
-	$Sprite2D.flip_h = velocity.x < 0
+
+	if velocity.x < 0:
+		$Sprite2D.flip_h = true
+	elif velocity.x > 0:
+		$Sprite2D.flip_h = false
 
 	#Dash Activation
 	if Input.is_action_just_pressed("dash") and direction and not is_dashing and dash_timer <= 0.0:
