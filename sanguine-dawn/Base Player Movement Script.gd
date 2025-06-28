@@ -4,6 +4,8 @@ extends CharacterBody2D
 @export var walk_speed = 150.0
 @export var run_speed = 250.0
 @export var jump_force = -400.0
+@export var jump_count = 0
+@export var max_jumps = 2
 
 @export_range(0, 1) var acceleration = 0.1
 @export_range(0, 1) var deceleration = 0.1
@@ -17,9 +19,14 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if is_on_floor():
+		jump_count = 0
+
+	# Handle jump, and double jump
+	if Input.is_action_just_pressed("jump") and jump_count < max_jumps:
 		velocity.y = jump_force
+		jump_count += 1
+		print("jump")
 
 # Varible Jump Height
 	if Input.is_action_just_released("jump") and velocity.y < 0:
