@@ -91,6 +91,8 @@ func _physics_process(delta):
 		var current_distance = abs(position.x - dash_start_position)
 		if current_distance >= dash_max_distance:
 			is_dashing = false
+		elif velocity.x == 0:
+			is_dashing = false
 		else:
 			velocity.x = dash_direction * dash_speed * dash_curve.sample(current_distance / dash_max_distance)
 			velocity.y = 0
