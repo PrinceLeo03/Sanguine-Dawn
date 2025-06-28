@@ -2,3 +2,5 @@ res://character_body_2d.gd
 res://node_2d.tscn
 res://Testing Scene.tscn
 res://Test.gd
+res://Dash Template.gd
+res://Base Player Movement Script.gd

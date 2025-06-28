@@ -9,6 +9,9 @@ extends CharacterBody2D
 @export_range(0, 1) var deceleration = 0.1
 @export_range(0, 1) var deceleration_on_jump_release = 0.5
 
+# Gets gravity from 
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -35,5 +38,6 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, direction * speed, speed * acceleration)
 	else:
 		velocity.x = move_toward(velocity.x, 0, walk_speed * deceleration)
+	$Sprite2D.flip_h = velocity.x < 0
 
 	move_and_slide()

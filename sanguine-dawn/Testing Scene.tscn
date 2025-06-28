@@ -1,13 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://iwfnkg3lmrlj"]
+[gd_scene load_steps=6 format=3 uid="uid://iwfnkg3lmrlj"]
 
 [ext_resource type="Texture2D" uid="uid://cxytp15calbry" path="res://icon.svg" id="1_xvfed"]
 [ext_resource type="Script" uid="uid://bj3wajoysl2r" path="res://Base Player Movement Script.gd" id="2_xw3mf"]
+[ext_resource type="Texture2D" uid="uid://hc5ae0koxk56" path="res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png" id="3_xw3mf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
 size = Vector2(128, 131)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
-size = Vector2(127, 128)
+size = Vector2(37.4634, 54.0843)
 
 [node name="Node2D" type="Node2D"]
 
@@ -29,16 +30,17 @@ position = Vector2(67, 583)
 script = ExtResource("2_xw3mf")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(-17, -51)
+position = Vector2(-52.1484, 12.9532)
 scale = Vector2(0.640625, 1.10938)
-texture = ExtResource("1_xvfed")
+texture = ExtResource("3_xw3mf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-16.6797, -51)
+position = Vector2(-52.1484, 12.9532)
 scale = Vector2(0.640625, 1.10938)
 shape = SubResource("RectangleShape2D_q6r6c")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(3, 3)
 process_callback = 0
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
