@@ -1,3 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1751110936
-icon.svg::CompressedTexture2D::6437911658972058998::1751110936::1751110994::1::::<><><>0<>0<>1399c6f9a7833a2b6ade170321149d91<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::6437911658972058998::1751110936::1751110994::1::::<><><>0<>0<>1399c6f9a7833a2b6ade170321149d91<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+node_2d.tscn::PackedScene::6701522602129955001::1751113148::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://cpuxtfvw8a68i::::res://character_body_2d.gd
+character_body_2d.gd::GDScript::90507621260067939::1751122210::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Test Player Script.gd::GDScript::3775582062299123738::1751117670::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Testing Scene.tscn::PackedScene::607254395767881299::1751122426::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://character_body_2d.gd

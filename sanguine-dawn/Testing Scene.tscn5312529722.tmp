@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://iwfnkg3lmrlj"]
 
 [ext_resource type="Texture2D" uid="uid://cxytp15calbry" path="res://icon.svg" id="1_xvfed"]
-[ext_resource type="Script" uid="uid://bj3wajoysl2r" path="res://Base Player Movement Script.gd" id="2_xw3mf"]
+[ext_resource type="Script" uid="uid://bt16jxnsowxmw" path="res://character_body_2d.gd" id="2_xw3mf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
 size = Vector2(128, 131)
@@ -10,9 +10,9 @@ size = Vector2(128, 131)
 size = Vector2(127, 128)
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(66, 583)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(67, 583)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(510.5, 53.5)
@@ -25,7 +25,6 @@ scale = Vector2(8.97656, 0.164062)
 shape = SubResource("RectangleShape2D_0hol4")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(67, 583)
 script = ExtResource("2_xw3mf")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
@@ -38,8 +37,4 @@ position = Vector2(-16.6797, -51)
 scale = Vector2(0.640625, 1.10938)
 shape = SubResource("RectangleShape2D_q6r6c")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-process_callback = 0
-position_smoothing_enabled = true
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
+[node name="JumpHeightTimer" type="Timer" parent="CharacterBody2D"]
