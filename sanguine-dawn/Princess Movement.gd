@@ -30,6 +30,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready() -> void:
 	$StaticBody2D3.connect("change", asdf)
+	$Sprite2D/PrincessAnimation.play("Idle")
 
 func asdf() -> void:
 	var pos2 :=Vector2(get_node("/root/Node2D/Player/CHAR_2").global_position)
