@@ -11,9 +11,9 @@ icon.svg::CompressedTexture2D/CompressedTexture2D::6437911658972058998::17511109
 Level 1.tscn::PackedScene::3270176777663790866::1751217740::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://blwgyxkge4qj0::::res://Character Change Script.gd<>uid://iwfnkg3lmrlj::::res://Players.tscn
 node_2d.gd::GDScript/GDScript::3566431886012013570::1751202684::0::1::::<>RefCounted<><>0<>0<><>::
 node_2d.tscn::PackedScene/PackedScene::6701522602129955001::1751113148::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://cpuxtfvw8a68i::::res://character_body_2d.gd
-Players.tscn::PackedScene::607254395767881299::1751217842::0::1::::<><><>0<>0<><>::uid://d4j0jy5mjuidc::::res://Art/PrincessPH.png<>uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://l0om48yl10jt::::res://camera_2d.gd<>uid://c2kenhk7ctln7::::res://Art/VampirePH.png<>uid://bicmw3wu2ehbr::::res://static_body_2d_3.gd<>uid://cxytp15calbry::::res://icon.svg
+Players.tscn::PackedScene::607254395767881299::1751220596::0::1::::<><><>0<>0<><>::uid://d4j0jy5mjuidc::::res://Art/PrincessPH.png<>uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://l0om48yl10jt::::res://camera_2d.gd<>uid://c2kenhk7ctln7::::res://Art/VampirePH.png<>uid://bicmw3wu2ehbr::::res://static_body_2d_3.gd<>uid://cxytp15calbry::::res://icon.svg
 player_spawner.gd::GDScript/GDScript::6235158042929538444::1751195096::0::1::::<>Node2D<><>0<>0<><>::
-Princess Movement.gd::GDScript/GDScript::90507621260067939::1751211054::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Princess Movement.gd::GDScript::90507621260067939::1751220454::0::1::::<>CharacterBody2D<><>0<>0<><>::
 static_body_2d_3.gd::GDScript/GDScript::2952829585269041055::1751211610::0::1::::<>StaticBody2D<><>0<>0<><>::
 Test Player Script.gd::GDScript/GDScript::3775582062299123738::1751117670::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Vampire Movement.gd::GDScript/GDScript::652800600574687324::1751211042::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -35,5 +35,6 @@ Run - Copy.png::CompressedTexture2D/CompressedTexture2D::497272419944830683::175
 Run.png::CompressedTexture2D/CompressedTexture2D::4248618396878528549::1751123260::1751123260::1::::<><><>0<>0<>b103952cc301cf60273af3fb1e6bd0fb<>res://.godot/imported/Run.png-2f55ed218e0246c0eb5fb661b4ea2cdf.ctex::
 Take Hit.png::CompressedTexture2D/CompressedTexture2D::7474225258280214201::1751123260::1751123260::1::::<><><>0<>0<>28090cf2554df15cc1435aa1a1450c46<>res://.godot/imported/Take Hit.png-2fbebe41db362944e1f9c07e09702010.ctex::
 ::res://Art/Princess/::1751216520
+Idle-sheet-sheet.png::CompressedTexture2D::1356758371213319253::1751220790::1751220790::1::::<><><>0<>0<>269808a40001d374cc428eec854eb48b<>res://.godot/imported/Idle-sheet-sheet.png-cda08633fd0fc191fd41865e5103f50a.ctex::
 ::res://Tile Sheets/::1751217886
 simple_natural_landscape_free_pixel_art_background.png::CompressedTexture2D::4537418528791225839::1751217954::1751217954::1::::<><><>0<>0<>94a03a9263214f629c16af3bc7810c4d<>res://.godot/imported/simple_natural_landscape_free_pixel_art_background.png-50030bd52faebbdfb7985202b5037a3d.ctex::

@@ -1,12 +1,48 @@
-[gd_scene load_steps=12 format=3 uid="uid://iwfnkg3lmrlj"]
+[gd_scene load_steps=15 format=3 uid="uid://iwfnkg3lmrlj"]
 
-[ext_resource type="Texture2D" uid="uid://d4j0jy5mjuidc" path="res://Art/PrincessPH.png" id="2_4ecn2"]
+[ext_resource type="Texture2D" uid="uid://tlhu2v50tqg8" path="res://Art/Princess/Idle-sheet-sheet.png" id="2_ph5nk"]
 [ext_resource type="Script" uid="uid://bj3wajoysl2r" path="res://Princess Movement.gd" id="2_xw3mf"]
 [ext_resource type="Script" uid="uid://jkhsbjn1d2n5" path="res://Vampire Movement.gd" id="3_xw3mf"]
 [ext_resource type="Script" uid="uid://l0om48yl10jt" path="res://camera_2d.gd" id="6_4ecn2"]
 [ext_resource type="Texture2D" uid="uid://c2kenhk7ctln7" path="res://Art/VampirePH.png" id="6_4g8q7"]
 [ext_resource type="Script" uid="uid://bicmw3wu2ehbr" path="res://static_body_2d_3.gd" id="6_vlrmh"]
 [ext_resource type="Texture2D" uid="uid://cxytp15calbry" path="res://icon.svg" id="7_ph5nk"]
+
+[sub_resource type="Animation" id="Animation_ph5nk"]
+resource_name = "Idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.766667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 1]
+}
+
+[sub_resource type="Animation" id="Animation_gsbhy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m2dvq"]
+_data = {
+&"Idle": SubResource("Animation_ph5nk"),
+&"RESET": SubResource("Animation_gsbhy")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
 size = Vector2(49.9512, 40.0261)
@@ -32,9 +68,17 @@ collision_layer = 2
 script = ExtResource("2_xw3mf")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player/CHAR_1"]
+texture_filter = 1
 position = Vector2(-50.8898, 13.3473)
 scale = Vector2(0.425295, 0.546339)
-texture = ExtResource("2_4ecn2")
+texture = ExtResource("2_ph5nk")
+hframes = 6
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/CHAR_1/Sprite2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_m2dvq")
+}
 
 [node name="PrincessCS1" type="CollisionShape2D" parent="Player/CHAR_1"]
 position = Vector2(-51, 16)
@@ -74,6 +118,7 @@ script = ExtResource("3_xw3mf")
 dash_curve = SubResource("Curve_xw3mf")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player/CHAR_2"]
+texture_filter = 1
 position = Vector2(-50.8898, 8.3473)
 scale = Vector2(0.564796, 0.611402)
 texture = ExtResource("6_4g8q7")
