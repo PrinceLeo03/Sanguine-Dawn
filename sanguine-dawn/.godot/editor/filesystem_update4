@@ -1,10 +1,14 @@
-res://character_body_2d.gd
-res://node_2d.tscn
 res://Testing Scene.tscn
-res://Test.gd
-res://Dash Template.gd
-res://Base Player Movement Script.gd
-res://Vampire Movement.gd
-res://Princess Movement.gd
+res://Level 1.tscn
 res://Vampire Testing Scene.tscn
+res://Princess CHAR_1.tscn
 res://Character Change Script.gd
+res://Princess Movement.gd
+res://Vampire CHAR_2.tscn
+res://CHAR_1.tscn
+res://CHAR_2.tscn
+res://Dash Template.gd
+res://node_2d.gd
+res://Vampire Movement.gd
+res://static_body_2d_3.gd
+res://camera Switch.gd

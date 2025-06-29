@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://dii0mx61ewek4"]
+
+[ext_resource type="Script" uid="uid://jkhsbjn1d2n5" path="res://Vampire Movement.gd" id="1_xdv88"]
+[ext_resource type="Texture2D" uid="uid://hc5ae0koxk56" path="res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png" id="2_6n62p"]
+
+[sub_resource type="Curve" id="Curve_ryduq"]
+_data = [Vector2(0, 0.995), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.26, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chp0w"]
+size = Vector2(37.4634, 54.0843)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CHAR_2" type="CharacterBody2D" parent="."]
+position = Vector2(134, 1166)
+collision_layer = 2
+script = ExtResource("1_xdv88")
+dash_curve = SubResource("Curve_ryduq")
+
+[node name="Sprite2D" type="Sprite2D" parent="CHAR_2"]
+position = Vector2(-52.1484, 12.9532)
+scale = Vector2(0.185295, 0.466339)
+texture = ExtResource("2_6n62p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CHAR_2"]
+position = Vector2(-52.1484, 12.9532)
+scale = Vector2(0.640625, 1.10938)
+shape = SubResource("RectangleShape2D_chp0w")
+
+[node name="Camera2D" type="Camera2D" parent="CHAR_2"]
+zoom = Vector2(3, 3)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true

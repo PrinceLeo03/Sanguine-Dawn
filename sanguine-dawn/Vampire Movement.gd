@@ -28,6 +28,23 @@ var is_dashing = false
 var dash_start_position = 0
 var dash_direction = 0
 var dash_timer = 0.0
+var move1 :=bool(false) 
+
+func _ready() -> void:
+	$StaticBody2D3.connect("change", asdf)
+
+func asdf() -> void:
+	var pos2 :=Vector2(get_node("/root/Node2D/Camera2D/Player/CHAR_1").global_position)
+	if move1 == true:
+		move1 = false
+		self.visible = false
+	else:
+		self.position = (pos2)
+		move1 = true
+		self.visible = true
+		
+		
+	pass
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -41,7 +58,7 @@ func _physics_process(delta):
 		coyote_time_left -= delta
 
 	# Register jump input for buffer
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed("jump") and move1 == true:
 		jump_buffer_left = jump_buffer_time
 	# Reduce jump buffer time
 	else:
@@ -55,7 +72,7 @@ func _physics_process(delta):
 			jump_buffer_left = 0.0  #Clears Buffer
 
 # Varible Jump Height
-	if Input.is_action_just_released("jump") and velocity.y < 0:
+	if Input.is_action_just_released("jump") and velocity.y < 0 and move1 == true:
 		velocity.y *= deceleration_on_jump_release
 
 	# Faster falling logic
@@ -66,14 +83,14 @@ func _physics_process(delta):
 
 # Controls running/sprinting
 	var speed
-	if Input.is_action_pressed("run"):
+	if Input.is_action_pressed("run") and move1 == true:
 		speed = run_speed
 	else:
 		speed = walk_speed
 
 	# Get the input direction and handle the movement/deceleration and acceleration.
 	direction = Input.get_axis("left", "right")
-	if direction:
+	if direction and move1 == true:
 		velocity.x = move_toward(velocity.x, direction * speed, speed * acceleration)
 	else:
 		velocity.x = move_toward(velocity.x, 0, walk_speed * deceleration)
@@ -84,7 +101,7 @@ func _physics_process(delta):
 		$Sprite2D.flip_h = false
 
 	#Dash Activation
-	if Input.is_action_just_pressed("dash") and direction and not is_dashing and dash_timer <= 0.0:
+	if Input.is_action_just_pressed("dash") and direction and not is_dashing and dash_timer <= 0.0 and move1 == true:
 		is_dashing = true
 		dash_start_position = position.x
 		dash_direction = direction

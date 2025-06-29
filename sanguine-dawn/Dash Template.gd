@@ -11,19 +11,19 @@ var dash_direction = 0
 var dash_timer = 0
 
 	#Dash Activation
-	if Input.is_action_just_pressed("dash") and direction and not is_dashing and dash_timer <= 0
-		is_dashing = true
-		dash_start_position = position.x
-		dash_direction = direction
-		dash_timer = dash_cooldown
+if Input.is_action_just_pressed("dash") and direction and not is_dashing and dash_timer <= 0
+	is_dashing = true
+	dash_start_position = position.x
+	dash_direction = direction
+	dash_timer = dash_cooldown
 
 	# Performs dash
-		var current_distance = abs(position.x - dash_start_position)
-		if current_distance >= dash_max_distance:
-			is_dashing = false
-		else:
-			velocity.x = dash_direction * dash_speed * dash_curve.sample(current_distance / dash_max_distance)
-			velocity.y = 0
+var current_distance = abs(position.x - dash_start_position)
+if current_distance >= dash_max_distance:
+	is_dashing = false
+else:
+	velocity.x = dash_direction * dash_speed * dash_curve.sample(current_distance / dash_max_distance)
+	velocity.y = 0
 
 	#reduces dash timer
 	if dash_timer > 0:

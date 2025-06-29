@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqw1bjqy8t0cj"]
+
+[ext_resource type="Script" uid="uid://bj3wajoysl2r" path="res://Princess Movement.gd" id="1_4fnu8"]
+[ext_resource type="Texture2D" uid="uid://cxytp15calbry" path="res://icon.svg" id="2_aoqp4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5it0j"]
+size = Vector2(37.4634, 54.0843)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CHAR_1" type="CharacterBody2D" parent="."]
+position = Vector2(67, 583)
+collision_layer = 2
+script = ExtResource("1_4fnu8")
+
+[node name="Sprite2D" type="Sprite2D" parent="CHAR_1"]
+position = Vector2(-52.1484, 12.9532)
+scale = Vector2(0.185295, 0.466339)
+texture = ExtResource("2_aoqp4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CHAR_1"]
+position = Vector2(-52.1484, 12.9532)
+scale = Vector2(0.640625, 1.10938)
+shape = SubResource("RectangleShape2D_5it0j")
+
+[node name="Camera2D" type="Camera2D" parent="CHAR_1"]
+zoom = Vector2(3, 3)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true

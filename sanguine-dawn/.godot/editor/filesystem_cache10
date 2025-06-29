@@ -1,23 +1,29 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1751110936
-Base Player Movement Script.gd::GDScript::90507621260067939::1751129150::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Character Change Script.gd::GDScript::3204322659075302643::1751196340::0::1::::<>Node2D<><>0<>0<><>::
+CHAR_2.tscn::PackedScene::7738828433675587057::1751196342::0::1::::<><><>0<>0<><>::uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
+Dash Template.gd::GDScript/GDScript::5853057655376280859::1751123066::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6437911658972058998::1751110936::1751110994::1::::<><><>0<>0<>1399c6f9a7833a2b6ade170321149d91<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Level 1.tscn::PackedScene::3270176777663790866::1751196450::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://blwgyxkge4qj0::::res://Character Change Script.gd<>uid://bqw1bjqy8t0cj::::res://Princess CHAR_1.tscn<>uid://cx4ltv6notjic::::res://Vampire Testing Scene.tscn
 node_2d.tscn::PackedScene/PackedScene::6701522602129955001::1751113148::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://cpuxtfvw8a68i::::res://character_body_2d.gd
-Dash Template.gd::GDScript::5853057655376280859::1751123066::0::1::::<>Node<><>0<>0<><>::
-Vampire Movement.gd::GDScript::652800600574687324::1751129228::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Test Player Script.gd::GDScript::3775582062299123738::1751117670::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Testing Scene.tscn::PackedScene::607254395767881299::1751129238::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://Base Player Movement Script.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
+player_spawner.gd::GDScript::6235158042929538444::1751195096::0::1::::<>Node2D<><>0<>0<><>::
+Princess CHAR_1.tscn::PackedScene::3556439418659114201::1751196342::0::1::::<><><>0<>0<><>::uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://cxytp15calbry::::res://icon.svg
+Princess Movement.gd::GDScript::90507621260067939::1751195804::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Test Player Script.gd::GDScript/GDScript::3775582062299123738::1751117670::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Testing Scene.tscn::PackedScene::607254395767881299::1751196340::0::1::::<><><>0<>0<><>::uid://blwgyxkge4qj0::::res://Character Change Script.gd<>uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
+Vampire Movement.gd::GDScript/GDScript::652800600574687324::1751138862::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Vampire Testing Scene.tscn::PackedScene::6447754694422721166::1751196342::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
 ::res://Art/::1751123232
 ::res://Art/Hero Knight by LuizMelo/::1751123260
 ::res://Art/Hero Knight by LuizMelo/Hero Knight/::1751123260
-License.txt::TextFile::-1::1751123260::0::1::::<><><>0<>0<><>::
+License.txt::TextFile/TextFile::-1::1751123260::0::1::::<><><>0<>0<><>::
 ::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/::1751123260
-Attack1.png::CompressedTexture2D::3232914798041558001::1751123260::1751123260::1::::<><><>0<>0<>86dad5e1431e04513a88ec9276d53f52<>res://.godot/imported/Attack1.png-0c30357775f30444ecb3abfdfcf5dc9a.ctex::
-Attack2.png::CompressedTexture2D::9205819775085570622::1751123260::1751123260::1::::<><><>0<>0<>a3d41e8c5b54899544b70b50e1512439<>res://.godot/imported/Attack2.png-e783380da07c0792939e3323c27b50ba.ctex::
-Death.png::CompressedTexture2D::1655797013920421634::1751123260::1751123260::1::::<><><>0<>0<>894244df5299fc80f9257f17eb0dfb36<>res://.godot/imported/Death.png-e069baa499c62c2c2bdb4bd814e39f50.ctex::
-Fall.png::CompressedTexture2D::6347378481360932186::1751123260::1751123260::1::::<><><>0<>0<>0d5577012a1b3f6cef3847727969be47<>res://.godot/imported/Fall.png-1cbf583309b54309ea2ed452d1364a0a.ctex::
-Idle.png::CompressedTexture2D::7577863551782576335::1751123260::1751123260::1::::<><><>0<>0<>c8f6b3ccdcccd7af9c206a08a583eaa6<>res://.godot/imported/Idle.png-dceb2956b62fafd04ed03df42e3b846b.ctex::
-Jump.png::CompressedTexture2D::752290033717139070::1751123260::1751123260::1::::<><><>0<>0<>b411233ebad439e7f9280b6626546d95<>res://.godot/imported/Jump.png-8b8a6c9d4bbd0cff74f7dc40ef84b881.ctex::
-Run - Copy.png::CompressedTexture2D::497272419944830683::1751123434::1751123436::1::::<><><>0<>0<>e815c1e242f4e5ed07907d3f4923b423<>res://.godot/imported/Run - Copy.png-d76c042e7b53b616b83768bddb4dc253.ctex::
-Run.png::CompressedTexture2D::4248618396878528549::1751123260::1751123260::1::::<><><>0<>0<>b103952cc301cf60273af3fb1e6bd0fb<>res://.godot/imported/Run.png-2f55ed218e0246c0eb5fb661b4ea2cdf.ctex::
-Take Hit.png::CompressedTexture2D::7474225258280214201::1751123260::1751123260::1::::<><><>0<>0<>28090cf2554df15cc1435aa1a1450c46<>res://.godot/imported/Take Hit.png-2fbebe41db362944e1f9c07e09702010.ctex::
+Attack1.png::CompressedTexture2D/CompressedTexture2D::3232914798041558001::1751123260::1751123260::1::::<><><>0<>0<>86dad5e1431e04513a88ec9276d53f52<>res://.godot/imported/Attack1.png-0c30357775f30444ecb3abfdfcf5dc9a.ctex::
+Attack2.png::CompressedTexture2D/CompressedTexture2D::9205819775085570622::1751123260::1751123260::1::::<><><>0<>0<>a3d41e8c5b54899544b70b50e1512439<>res://.godot/imported/Attack2.png-e783380da07c0792939e3323c27b50ba.ctex::
+Death.png::CompressedTexture2D/CompressedTexture2D::1655797013920421634::1751123260::1751123260::1::::<><><>0<>0<>894244df5299fc80f9257f17eb0dfb36<>res://.godot/imported/Death.png-e069baa499c62c2c2bdb4bd814e39f50.ctex::
+Fall.png::CompressedTexture2D/CompressedTexture2D::6347378481360932186::1751123260::1751123260::1::::<><><>0<>0<>0d5577012a1b3f6cef3847727969be47<>res://.godot/imported/Fall.png-1cbf583309b54309ea2ed452d1364a0a.ctex::
+Idle.png::CompressedTexture2D/CompressedTexture2D::7577863551782576335::1751123260::1751123260::1::::<><><>0<>0<>c8f6b3ccdcccd7af9c206a08a583eaa6<>res://.godot/imported/Idle.png-dceb2956b62fafd04ed03df42e3b846b.ctex::
+Jump.png::CompressedTexture2D/CompressedTexture2D::752290033717139070::1751123260::1751123260::1::::<><><>0<>0<>b411233ebad439e7f9280b6626546d95<>res://.godot/imported/Jump.png-8b8a6c9d4bbd0cff74f7dc40ef84b881.ctex::
+Run - Copy.png::CompressedTexture2D/CompressedTexture2D::497272419944830683::1751123434::1751123436::1::::<><><>0<>0<>e815c1e242f4e5ed07907d3f4923b423<>res://.godot/imported/Run - Copy.png-d76c042e7b53b616b83768bddb4dc253.ctex::
+Run.png::CompressedTexture2D/CompressedTexture2D::4248618396878528549::1751123260::1751123260::1::::<><><>0<>0<>b103952cc301cf60273af3fb1e6bd0fb<>res://.godot/imported/Run.png-2f55ed218e0246c0eb5fb661b4ea2cdf.ctex::
+Take Hit.png::CompressedTexture2D/CompressedTexture2D::7474225258280214201::1751123260::1751123260::1::::<><><>0<>0<>28090cf2554df15cc1435aa1a1450c46<>res://.godot/imported/Take Hit.png-2fbebe41db362944e1f9c07e09702010.ctex::

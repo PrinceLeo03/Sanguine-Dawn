@@ -23,9 +23,25 @@ var coyote_time_left := 0.0
 
 @export var jump_buffer_time := 0.15
 var jump_buffer_left := 0.0
+var move2 :=bool(true)
 
 # Gets gravity from 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+func _ready() -> void:
+	$StaticBody2D3.connect("change", asdf)
+
+func asdf() -> void:
+	var pos2 :=Vector2(get_node("/root/Node2D/Camera2D/Player/CHAR_2").global_position)
+	if move2 == true:
+		move2 = false
+		self.visible = false
+	else:
+		self.position = (pos2)
+		move2 = true
+		self.visible = true
+		
+	pass
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -43,7 +59,7 @@ func _physics_process(delta):
 		jump_count = 0
 
 	# Register jump input for buffer
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed("jump") and move2 == true:
 		jump_buffer_left = jump_buffer_time
 	# Reduce jump buffer time
 	else:
@@ -57,7 +73,7 @@ func _physics_process(delta):
 		jump_buffer_left = 0.0  #Clears Buffer
 
 # Varible Jump Height
-	if Input.is_action_just_released("jump") and velocity.y < 0:
+	if Input.is_action_just_released("jump") and velocity.y < 0 and move2 == true:
 		velocity.y *= deceleration_on_jump_release
 
 	# Faster falling logic
@@ -68,7 +84,7 @@ func _physics_process(delta):
 
 # Controls running/sprinting
 	var speed
-	if Input.is_action_pressed("run"):
+	if Input.is_action_pressed("run") and move2 == true:
 		speed = run_speed
 	else:
 		speed = walk_speed
@@ -90,10 +106,11 @@ func _physics_process(delta):
 	else:
 	# Movement logic
 			var direction = Input.get_axis("left", "right")
-			if direction:
+			if direction and move2 == true:
 				velocity.x = move_toward(velocity.x, direction * speed, speed * acceleration)
 			else:
 				velocity.x = move_toward(velocity.x, 0, walk_speed * deceleration)
+			$Sprite2D.flip_h = velocity.x < 0
 			$Sprite2D.flip_h = velocity.x < 0
 
 	move_and_slide()
