@@ -12,3 +12,6 @@ res://node_2d.gd
 res://Vampire Movement.gd
 res://static_body_2d_3.gd
 res://camera Switch.gd
+res://camera_2d.gd
+res://camera_Princess.gd
+res://camera_Vampire.gd

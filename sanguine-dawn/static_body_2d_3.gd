@@ -18,7 +18,7 @@ func _ready():
 func _process(delta):
 	if time_left > 0.0:
 		time_left -= delta
-		print(time_left)
+		#print(time_left)
 	elif time_left <= 0.0 and can_change == false:
 		print("Can now change characters")
 		can_change = true

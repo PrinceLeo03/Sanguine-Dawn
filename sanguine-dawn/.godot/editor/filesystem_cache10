@@ -1,18 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1751110936
-Character Change Script.gd::GDScript::3204322659075302643::1751196340::0::1::::<>Node2D<><>0<>0<><>::
-CHAR_2.tscn::PackedScene::7738828433675587057::1751196342::0::1::::<><><>0<>0<><>::uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
-Dash Template.gd::GDScript/GDScript::5853057655376280859::1751123066::0::1::::<>Node<><>0<>0<><>::
+Character Change Script.gd::GDScript::3204322659075302643::1751198722::0::1::::<>Node2D<><>0<>0<><>::
+CHAR_1.tscn::PackedScene::3556439418659114201::1751210280::0::1::::<><><>0<>0<><>::uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://cxytp15calbry::::res://icon.svg
+CHAR_2.tscn::PackedScene::7738828433675587057::1751210280::0::1::::<><><>0<>0<><>::uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
+Dash Template.gd::GDScript::5853057655376280859::1751199244::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6437911658972058998::1751110936::1751110994::1::::<><><>0<>0<>1399c6f9a7833a2b6ade170321149d91<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-Level 1.tscn::PackedScene::3270176777663790866::1751196450::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://blwgyxkge4qj0::::res://Character Change Script.gd<>uid://bqw1bjqy8t0cj::::res://Princess CHAR_1.tscn<>uid://cx4ltv6notjic::::res://Vampire Testing Scene.tscn
+Level 1.tscn::PackedScene::3270176777663790866::1751210278::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://blwgyxkge4qj0::::res://Character Change Script.gd<>uid://bqw1bjqy8t0cj::::res://CHAR_1.tscn<>uid://cx4ltv6notjic::::res://Vampire Testing Scene.tscn
 node_2d.tscn::PackedScene/PackedScene::6701522602129955001::1751113148::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://cpuxtfvw8a68i::::res://character_body_2d.gd
-player_spawner.gd::GDScript::6235158042929538444::1751195096::0::1::::<>Node2D<><>0<>0<><>::
-Princess CHAR_1.tscn::PackedScene::3556439418659114201::1751196342::0::1::::<><><>0<>0<><>::uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://cxytp15calbry::::res://icon.svg
-Princess Movement.gd::GDScript::90507621260067939::1751195804::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player_spawner.gd::GDScript/GDScript::6235158042929538444::1751195096::0::1::::<>Node2D<><>0<>0<><>::
+Princess Movement.gd::GDScript::90507621260067939::1751208680::0::1::::<>CharacterBody2D<><>0<>0<><>::
+node_2d.gd::GDScript::3566431886012013570::1751202684::0::1::::<>RefCounted<><>0<>0<><>::
+camera_2d.gd::GDScript::6407258681240169279::1751210290::0::1::::CustomCamera2D<>Camera2D<><>0<>0<><>::
+static_body_2d_3.gd::GDScript::2952829585269041055::1751204324::0::1::::<>StaticBody2D<><>0<>0<><>::
 Test Player Script.gd::GDScript/GDScript::3775582062299123738::1751117670::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Testing Scene.tscn::PackedScene::607254395767881299::1751196340::0::1::::<><><>0<>0<><>::uid://blwgyxkge4qj0::::res://Character Change Script.gd<>uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
-Vampire Movement.gd::GDScript/GDScript::652800600574687324::1751138862::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Vampire Testing Scene.tscn::PackedScene::6447754694422721166::1751196342::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
+Testing Scene.tscn::PackedScene::607254395767881299::1751210458::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png<>uid://cxjyu5hd3ipr8::::res://camera_2d.gd<>uid://bicmw3wu2ehbr::::res://static_body_2d_3.gd
+Vampire Movement.gd::GDScript::652800600574687324::1751207346::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Vampire Testing Scene.tscn::PackedScene::6447754694422721166::1751210278::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
 ::res://Art/::1751123232
 ::res://Art/Hero Knight by LuizMelo/::1751123260
 ::res://Art/Hero Knight by LuizMelo/Hero Knight/::1751123260

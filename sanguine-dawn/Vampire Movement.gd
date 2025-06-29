@@ -34,7 +34,7 @@ func _ready() -> void:
 	$StaticBody2D3.connect("change", asdf)
 
 func asdf() -> void:
-	var pos2 :=Vector2(get_node("/root/Node2D/Camera2D/Player/CHAR_1").global_position)
+	var pos2 :=Vector2(get_node("/root/Node2D/Player/CHAR_1").global_position)
 	if move1 == true:
 		move1 = false
 		self.visible = false
