@@ -3,6 +3,7 @@ extends CharacterBody2D
 @export var walk_speed = 200.0
 @export var run_speed = 300.0
 @export var jump_force = -600.0
+@export var direction = 0
 @export var fall_multipiler := 0.2
 
 @export_range(0, 1) var acceleration = 0.2
@@ -16,7 +17,7 @@ var coyote_time_left := 0.0
 var jump_buffer_left := 0.0
 
 @export var dash_speed = 1000.0
-@export var dash_max_distance = 300.0
+@export var dash_max_distance = 600.0
 @export var dash_curve : Curve
 @export var dash_cooldown = 1.0
 
@@ -71,7 +72,7 @@ func _physics_process(delta):
 		speed = walk_speed
 
 	# Get the input direction and handle the movement/deceleration and acceleration.
-	var direction = Input.get_axis("left", "right")
+	direction = Input.get_axis("left", "right")
 	if direction:
 		velocity.x = move_toward(velocity.x, direction * speed, speed * acceleration)
 	else:
@@ -90,7 +91,7 @@ func _physics_process(delta):
 		dash_timer = dash_cooldown
 		print("Dash")
 
-	# Performs dash
+# Performs dash
 	if is_dashing:
 		var current_distance = abs(position.x - dash_start_position)
 		if current_distance >= dash_max_distance:
@@ -104,5 +105,8 @@ func _physics_process(delta):
 	#reduces dash timer
 	if dash_timer > 0.0:
 		dash_timer -= delta
+
+	if dash_timer < 0.0:
+		is_dashing = false
 
 	move_and_slide()
