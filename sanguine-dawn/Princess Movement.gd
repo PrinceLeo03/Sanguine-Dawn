@@ -7,7 +7,7 @@ extends CharacterBody2D
 @export var max_jumps = 2
 @export var fall_multipiler := 0.2
 @export var slide_speed = 350.0
-@export var slide_duration = 0.4
+@export var slide_duration = 0.8
 @export var slide_deceleration := 1000.0
 
 var is_sliding = false
@@ -90,19 +90,23 @@ func _physics_process(delta):
 		speed = walk_speed
 
 	# Slide logic
-	if is_on_floor() and Input.is_action_just_pressed("slide") and !is_sliding and abs(velocity.x) > 100:
+	if is_on_floor() and Input.is_action_just_pressed("slide") and !is_sliding and abs(velocity.x) > 20:
 		is_sliding = true
 		slide_timer = slide_duration
 		slide_direction = sign(velocity.x)
+		$"PrincessCS1".visible = false
+		$"PrincessCS2".visible = true
 		print("Slide")
 
 	if is_sliding:
 		slide_timer -= delta
-		velocity.x = move_toward(velocity.x, 0, slide_deceleration * delta)
+		velocity.x = move_toward(velocity.x, walk_speed, slide_deceleration * delta)
 		$Sprite2D.flip_h = velocity.x < 0
 	
 		if slide_timer <= 0 or abs(velocity.x) < 100:
 			is_sliding = false
+			$"PrincessCS1".visible = true
+			$"PrincessCS2".visible = false
 	else:
 	# Movement logic
 			var direction = Input.get_axis("left", "right")
