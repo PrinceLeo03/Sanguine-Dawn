@@ -1,22 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1751110936
+camera_Princess.gd::GDScript::6407258681240169279::1751212176::0::1::::CustomCamera2D_1<>Camera2D<><>0<>0<><>::
 Character Change Script.gd::GDScript::3204322659075302643::1751198722::0::1::::<>Node2D<><>0<>0<><>::
-CHAR_1.tscn::PackedScene::3556439418659114201::1751210280::0::1::::<><><>0<>0<><>::uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://cxytp15calbry::::res://icon.svg
-CHAR_2.tscn::PackedScene::7738828433675587057::1751210280::0::1::::<><><>0<>0<><>::uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
+CHAR_1.tscn::PackedScene::3556439418659114201::1751212932::0::1::::<><><>0<>0<><>::uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://cxytp15calbry::::res://icon.svg
+CHAR_2.tscn::PackedScene::7738828433675587057::1751212932::0::1::::<><><>0<>0<><>::uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
 Dash Template.gd::GDScript::5853057655376280859::1751199244::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6437911658972058998::1751110936::1751110994::1::::<><><>0<>0<>1399c6f9a7833a2b6ade170321149d91<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-Level 1.tscn::PackedScene::3270176777663790866::1751210278::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://blwgyxkge4qj0::::res://Character Change Script.gd<>uid://bqw1bjqy8t0cj::::res://CHAR_1.tscn<>uid://cx4ltv6notjic::::res://Vampire Testing Scene.tscn
+Level 1.tscn::PackedScene::3270176777663790866::1751212930::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://blwgyxkge4qj0::::res://Character Change Script.gd<>uid://bqw1bjqy8t0cj::::res://CHAR_1.tscn<>uid://cx4ltv6notjic::::res://Vampire Testing Scene.tscn
+node_2d.gd::GDScript::3566431886012013570::1751202684::0::1::::<>RefCounted<><>0<>0<><>::
 node_2d.tscn::PackedScene/PackedScene::6701522602129955001::1751113148::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://cpuxtfvw8a68i::::res://character_body_2d.gd
 player_spawner.gd::GDScript/GDScript::6235158042929538444::1751195096::0::1::::<>Node2D<><>0<>0<><>::
-Princess Movement.gd::GDScript::90507621260067939::1751208680::0::1::::<>CharacterBody2D<><>0<>0<><>::
-node_2d.gd::GDScript::3566431886012013570::1751202684::0::1::::<>RefCounted<><>0<>0<><>::
-camera_2d.gd::GDScript::6407258681240169279::1751210290::0::1::::CustomCamera2D<>Camera2D<><>0<>0<><>::
-static_body_2d_3.gd::GDScript::2952829585269041055::1751204324::0::1::::<>StaticBody2D<><>0<>0<><>::
+Princess Movement.gd::GDScript::90507621260067939::1751211054::0::1::::<>CharacterBody2D<><>0<>0<><>::
+camera_Vampire.gd::GDScript::2021374223446876420::1751212130::0::1::::CustomCamera2D_2<>Camera2D<><>0<>0<><>::
+camera_2d.gd::GDScript::824559766557340777::1751212928::0::1::::<>Camera2D<><>0<>0<><>::
+static_body_2d_3.gd::GDScript::2952829585269041055::1751211610::0::1::::<>StaticBody2D<><>0<>0<><>::
 Test Player Script.gd::GDScript/GDScript::3775582062299123738::1751117670::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Testing Scene.tscn::PackedScene::607254395767881299::1751210458::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png<>uid://cxjyu5hd3ipr8::::res://camera_2d.gd<>uid://bicmw3wu2ehbr::::res://static_body_2d_3.gd
-Vampire Movement.gd::GDScript::652800600574687324::1751207346::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Vampire Testing Scene.tscn::PackedScene::6447754694422721166::1751210278::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
+Testing Scene.tscn::PackedScene::607254395767881299::1751217096::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://bj3wajoysl2r::::res://Princess Movement.gd<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png<>uid://l0om48yl10jt::::res://camera_2d.gd<>uid://bicmw3wu2ehbr::::res://static_body_2d_3.gd
+Vampire Movement.gd::GDScript::652800600574687324::1751211042::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Vampire Testing Scene.tscn::PackedScene::6447754694422721166::1751212930::0::1::::<><><>0<>0<><>::uid://cxytp15calbry::::res://icon.svg<>uid://jkhsbjn1d2n5::::res://Vampire Movement.gd<>uid://hc5ae0koxk56::::res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png
 ::res://Art/::1751123232
+PrincessPH.png::CompressedTexture2D::9214853220795669432::1751217102::1751217102::1::::<><><>0<>0<>0d04f3d3db96637fbe27b484d114c051<>res://.godot/imported/PrincessPH.png-222b564b68626639265aba7a939b80d5.ctex::
+VampirePH.png::CompressedTexture2D::6688850391014365118::1751217102::1751217102::1::::<><><>0<>0<>fed740dd455193d0c0dc8cd781a1ac90<>res://.godot/imported/VampirePH.png-a59efe91688565ce0c4e45d447c6bc93.ctex::
 ::res://Art/Hero Knight by LuizMelo/::1751123260
 ::res://Art/Hero Knight by LuizMelo/Hero Knight/::1751123260
 License.txt::TextFile/TextFile::-1::1751123260::0::1::::<><><>0<>0<><>::
@@ -30,3 +34,4 @@ Jump.png::CompressedTexture2D/CompressedTexture2D::752290033717139070::175112326
 Run - Copy.png::CompressedTexture2D/CompressedTexture2D::497272419944830683::1751123434::1751123436::1::::<><><>0<>0<>e815c1e242f4e5ed07907d3f4923b423<>res://.godot/imported/Run - Copy.png-d76c042e7b53b616b83768bddb4dc253.ctex::
 Run.png::CompressedTexture2D/CompressedTexture2D::4248618396878528549::1751123260::1751123260::1::::<><><>0<>0<>b103952cc301cf60273af3fb1e6bd0fb<>res://.godot/imported/Run.png-2f55ed218e0246c0eb5fb661b4ea2cdf.ctex::
 Take Hit.png::CompressedTexture2D/CompressedTexture2D::7474225258280214201::1751123260::1751123260::1::::<><><>0<>0<>28090cf2554df15cc1435aa1a1450c46<>res://.godot/imported/Take Hit.png-2fbebe41db362944e1f9c07e09702010.ctex::
+::res://Art/Princess/::1751216520

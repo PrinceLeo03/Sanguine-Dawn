@@ -1,14 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://iwfnkg3lmrlj"]
+[gd_scene load_steps=12 format=3 uid="uid://iwfnkg3lmrlj"]
 
 [ext_resource type="Texture2D" uid="uid://cxytp15calbry" path="res://icon.svg" id="1_xvfed"]
+[ext_resource type="Texture2D" uid="uid://d4j0jy5mjuidc" path="res://Art/PrincessPH.png" id="2_4ecn2"]
 [ext_resource type="Script" uid="uid://bj3wajoysl2r" path="res://Princess Movement.gd" id="2_xw3mf"]
 [ext_resource type="Script" uid="uid://jkhsbjn1d2n5" path="res://Vampire Movement.gd" id="3_xw3mf"]
-[ext_resource type="Texture2D" uid="uid://hc5ae0koxk56" path="res://Art/Hero Knight by LuizMelo/Hero Knight/Sprites/Run - Copy.png" id="5_4d484"]
 [ext_resource type="Script" uid="uid://l0om48yl10jt" path="res://camera_2d.gd" id="6_4ecn2"]
+[ext_resource type="Texture2D" uid="uid://c2kenhk7ctln7" path="res://Art/VampirePH.png" id="6_4g8q7"]
 [ext_resource type="Script" uid="uid://bicmw3wu2ehbr" path="res://static_body_2d_3.gd" id="6_vlrmh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
-size = Vector2(37.4634, 54.0843)
+size = Vector2(49.9512, 37.859)
 
 [sub_resource type="Curve" id="Curve_xw3mf"]
 _data = [Vector2(0, 0.995), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.26, 0.0, 0, 0]
@@ -23,6 +24,7 @@ size = Vector2(128, 128)
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(3, 6)
 
 [node name="CHAR_1" type="CharacterBody2D" parent="Player"]
 position = Vector2(67, 583)
@@ -30,12 +32,12 @@ collision_layer = 2
 script = ExtResource("2_xw3mf")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player/CHAR_1"]
-position = Vector2(-52.1484, 12.9532)
-scale = Vector2(0.185295, 0.466339)
-texture = ExtResource("1_xvfed")
+position = Vector2(-52, 13)
+scale = Vector2(0.425295, 0.546339)
+texture = ExtResource("2_4ecn2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/CHAR_1"]
-position = Vector2(-52.1484, 12.9532)
+position = Vector2(-51, 15.9999)
 scale = Vector2(0.640625, 1.10938)
 shape = SubResource("RectangleShape2D_q6r6c")
 
@@ -44,6 +46,7 @@ position = Vector2(-163, -566)
 script = ExtResource("6_vlrmh")
 
 [node name="Cam 1" type="Camera2D" parent="Player/CHAR_1"]
+scale = Vector2(1.5, 1.5)
 zoom = Vector2(1.5, 1.5)
 limit_smoothed = true
 position_smoothing_enabled = true
@@ -58,18 +61,18 @@ script = ExtResource("6_4ecn2")
 
 [node name="CHAR_2" type="CharacterBody2D" parent="Player"]
 visible = false
-position = Vector2(163, 566)
+position = Vector2(69, 586)
 collision_layer = 2
 script = ExtResource("3_xw3mf")
 dash_curve = SubResource("Curve_xw3mf")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player/CHAR_2"]
-position = Vector2(-52.1484, 12.9532)
-scale = Vector2(0.185295, 0.466339)
-texture = ExtResource("5_4d484")
+position = Vector2(-52, 8.00001)
+scale = Vector2(0.564796, 0.611402)
+texture = ExtResource("6_4g8q7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/CHAR_2"]
-position = Vector2(-52.1484, 12.9532)
+position = Vector2(-53, 13)
 scale = Vector2(0.640625, 1.10938)
 shape = SubResource("RectangleShape2D_q6r6c")
 
@@ -79,6 +82,7 @@ script = ExtResource("6_vlrmh")
 
 [node name="Cam 2" type="Camera2D" parent="Player/CHAR_2"]
 scale = Vector2(1.5, 1.5)
+zoom = Vector2(1.5, 1.5)
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 12.0
